@@ -11,6 +11,69 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
+      <style
+        type="text/css"
+        dangerouslySetInnerHTML={{
+          __html: `@font-face {
+              font-family: "FKScreamer";
+              src: url("${
+            asset("/fonts/FKScreamer-Backslanted.otf")
+          }") format("truetype");
+              font-style: normal;
+              font-weight: normal;
+          }`,
+        }}
+      />
+      <style
+        type="text/css"
+        dangerouslySetInnerHTML={{
+          __html: `@font-face {
+              font-family: "FKScreamer";
+              src: url("${
+            asset("/fonts/FKScreamer-Slanted.otf")
+          }") format("truetype");
+              font-style: normal;
+              font-weight: 700;
+          }`,
+        }}
+      />
+      <style
+        type="text/css"
+        dangerouslySetInnerHTML={{
+          __html: `@font-face {
+              font-family: "FKScreamer";
+              src: url("${
+            asset("/fonts/FKScreamer-Upright.otf")
+          }") format("truetype");
+              font-style: normal;
+              font-weight: 900;
+          }`,
+        }}
+      />
+      <style
+        type="text/css"
+        dangerouslySetInnerHTML={{
+          __html: `@font-face {
+              font-family: "DMSans";
+              src: url("${
+            asset("/fonts/DMSans-Regular.ttf")
+          }") format("truetype");
+              font-style: normal;
+              font-weight: normal;
+          }`,
+        }}
+      />
+      <style
+        type="text/css"
+        dangerouslySetInnerHTML={{
+          __html: `@font-face {
+              font-family: "DMSans";
+              src: url("${asset("/fonts/DMSans-Bold.ttf")}") format("truetype");
+              font-style: normal;
+              font-weight: 700;
+          }`,
+        }}
+      />
     </Head>
   );
 }

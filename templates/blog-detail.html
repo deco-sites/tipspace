@@ -1,0 +1,67 @@
+<!--
+templateType: blog_post
+isAvailableForNewContent: true
+label: Infinity - Blog Post
+screenshotPath: ../images/template-previews/blog-details.png
+-->
+{% set template_css = "../../css/templates/blog.css" %}
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<div class="body-container body-container--blog-detail">
+
+    {# Blog post #}
+
+    <div class="in-blog-detail">
+        <div class="content-wrapper in-blog-detail__head">
+            <div class="in-blog-detail__title">
+                {% if content.featured_image %}
+                <div class="blog-post__featured-img">
+                    <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}" loading="lazy">
+                </div>
+                <div class="blog-post__featured-img--mobile">
+                    <img src="{{ content.featured_image }}" alt="{{ content.featured_image_alt_text }}" loading="lazy">
+                </div>
+                {% endif %}
+
+                {% if theme.blog_setting.blog_post.show_hide_tags.enable %}
+                {% if content.tag_list %}
+                <div class="blog-post__tags">
+                    {% for tag in content.tag_list %}
+                    <a class="blog-post__tag-link" href="{{ blog_tag_url(group.id, tag.slug) }}" rel="tag">{{ tag.name
+                        }}</a>{% if not loop.last %},{% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% endif %}
+                <h3>{{ content.name }}</h3>
+                <div class="blog-post__meta">
+                    {% if theme.blog_setting.blog_post.show_hide_timestamp.enable %}
+                    <time datetime="{{ content.publish_date }}" class="blog-post__timestamp">
+                        {{ content.publish_date | format_date('long', 'America/Sao_Paulo', 'pt-BR') }}
+                    </time>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="in-blog-detail__row">
+                <div>
+                    <article class="blog-post">
+                        <div class="blog-post__body">
+                            {{ content.post_body }}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="in-blog-detail__row">
+                <div class="hs-button-grid">
+                    <a href="https://tipspace.gg/blog/" class="hs-button-2"><span>Voltar para o Blog</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

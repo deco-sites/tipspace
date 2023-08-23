@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-
   /* Allow changing font family via CMS */
   html {
-    font-family: var(--font-family);
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .collapse-arrow .collapse-title:after {
+    width: 1rem !important;
+    height: 1rem !important;
+    color: white;
   }
 
   /** Remove default styles from input[type=number] */

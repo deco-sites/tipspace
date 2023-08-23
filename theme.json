@@ -1,0 +1,23 @@
+{
+  "label": "Tipspace",
+  "preview_path": "./templates/home-one.html",
+  "screenshot_path": "./images/theme-preview/infinity-preview.jpg",
+  "enable_domain_stylesheets": false,
+  "is_available_for_new_content": true,
+  "extends": "@marketplace/MakeWebBetter/Infinity",
+  "responsive_breakpoints": [{
+    "mediaQuery": "@media (max-width: 992px)",
+    "messages": {},
+    "name": "mobile",
+    "previewWidth": {
+      "units": "px",
+      "value": 520
+    }
+  }],
+  "version": "8",
+  "author": {
+    "name": "Rodrigo Damacena",
+    "email": "rodrigo@webnerd.com.br"
+  },
+  "license": "./license.txt"
+}

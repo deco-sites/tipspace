@@ -1,0 +1,391 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+:root {
+    --gray: #999;
+    --lightgray: whitesmoke;
+    --popular: #ffdd40;
+    --starter: #f73859;
+    --essential: #00aeef;
+    --professional: #ff7f45;
+
+    --white: white;
+    --primary: #BF2CF9;
+    --darkgreen: #02B3BD;
+    --dark: #080225;
+
+}
+
+/* screen - frame-1 - plans */
+.frame-1 {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    min-height: 577px;
+    overflow-x: hidden;
+}
+
+.frame-1 .flex-row {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    gap: 153px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.frame-1 .conhea-os-benefcio {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 82px;
+    min-width: 320px;
+}
+
+.frame-1 p.conhea-os-benefcio {
+    font-size: 1.6rem !important;
+}
+
+.frame-1 .overlap-group6 {
+    align-items: center;
+    background-color: #bf2cf9;
+    border-radius: 43px;
+    display: flex;
+    height: 94px;
+    min-width: 717px;
+    padding: 0 9px;
+}
+
+.frame-1 .overlap-group7 {
+    align-items: flex-start;
+    background-color: #080225;
+    border-radius: 43px;
+    display: flex;
+    height: 80px;
+    min-width: 232px;
+    padding: 19px 71px;
+}
+
+.frame-1 .anual {
+    color: #02b3bd;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 41px;
+}
+
+.frame-1 .semestral {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 1.0px;
+    margin-left: 44px;
+    min-height: 41px;
+    min-width: 145px;
+}
+
+.frame-1 .mensal {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 1.0px;
+    margin-left: 109px;
+    min-height: 41px;
+    min-width: 101px;
+}
+
+.frame-1 .group-406 {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 70px;
+    min-width: 1200px;
+    flex-direction: row;
+    justify-content: start;
+}
+
+/* Responsive plans */
+@media (max-width: 600px) {
+    .frame-1 .overlap-group {
+        background-image: none;
+        background-color: #f3f3f3;
+    }
+
+    .frame-1 .overlap-group2 {
+        background-image: none;
+        background-color: #BF2CF9;
+    }
+
+    .frame-1 .group-406 {
+        align-items: flex-start;
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .switch-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .frame-1 .flex-row {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: initial;
+        flex-direction: column;
+    }
+}
+
+.frame-1 .overlap-group {
+    align-items: center;
+    background-image: url(https://39878034.fs1.hubspotusercontent-na1.net/hubfs/39878034/home-planos/vector.svg);
+    background-size: 100% 100%;
+    display: flex;
+    gap: 14px;
+    height: 275px;
+    min-width: 397px;
+    padding: 32px 33px;
+}
+
+.frame-1 .vector-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 7.47px;
+    min-height: 197px;
+    width: 22px;
+}
+
+.frame-1 .vector {
+    height: 22px;
+    width: 22px;
+}
+
+.frame-1 .partidas-ilimitadas {
+    align-self: flex-end;
+    letter-spacing: 0.40px;
+    line-height: 35.3px;
+    min-height: 210px;
+    min-width: 229px;
+    margin-bottom: 0;
+}
+
+.frame-1 .overlap-group1 {
+    align-items: flex-start;
+    background-image: url(https://39878034.fs1.hubspotusercontent-na1.net/hubfs/39878034/home-planos/vector-2.svg);
+    background-size: 100% 100%;
+    display: flex;
+    gap: 15px;
+    height: 275px;
+    min-width: 396px;
+    padding: 33px 31px;
+}
+
+.frame-1 .vector-container-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 6px;
+    min-height: 162px;
+    width: 22px;
+}
+
+.frame-1 .super-queue-anti-s {
+    letter-spacing: 0.40px;
+    line-height: 35.1px;
+    min-height: 175px;
+}
+
+.frame-1 .overlap-group2 {
+    align-items: center;
+    background-image: url(https://39878034.fs1.hubspotusercontent-na1.net/hubfs/39878034/home-planos/vector-1.svg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 275px;
+    padding: 0 52px;
+    width: 397px;
+    justify-content: center;
+}
+
+.frame-1 .price-bar {
+    background-color: var(--dark);
+    text-align: center;
+    padding: 4px 26px;
+    border-radius: 14px;
+    display: table;
+    justify-content: center;
+    margin: auto;
+}
+
+.frame-1 .group-400 {
+    height: 28px;
+    width: 183px;
+}
+
+.frame-1 .overlap-group3 {
+    align-self: flex-start;
+    height: 113px;
+    margin-top: 14px;
+    position: relative;
+}
+
+.frame-1 .price-plan {
+    color: #f3f3f3;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.frame-1 h1.price-plan {
+    margin: 0 !important;
+}
+
+.frame-1 .ms {
+    color: #f3f3f3;
+    font-size: 27.6px;
+    font-weight: 500;
+}
+
+.frame-1 .faa-parte-de-uma-co {
+    letter-spacing: 0.40px;
+    line-height: 28.2px;
+    margin-top: 7px;
+    min-height: 56px;
+    min-width: 287px;
+}
+
+.frame-1 .overlap-group5 {
+    align-items: flex-start;
+    align-self: center;
+    background-image: url(https://39878034.fs1.hubspotusercontent-na1.net/hubfs/39878034/home-planos/vector-14.png);
+    background-size: 100% 100%;
+    display: flex;
+    height: 62px;
+    justify-content: flex-end;
+    margin-left: 31.71px;
+    margin-top: 76px;
+    min-width: 358px;
+    padding: 18px 93.8px;
+}
+
+.frame-1 .prices {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 15px;
+}
+
+/* Planos Toggle */
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+/*     font: 18px/1.5 "Noto Sans", sans-serif; */
+    background: var(--lightgray);
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.container {
+    max-width: 1000px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    padding: 50px 0;
+}
+
+.intro-text a {
+    text-decoration: underline;
+}
+
+/* SWITCH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.switch-wrapper {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 43px;
+    display: inline-flex;
+    position: relative;
+}
+
+.switch-wrapper [type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly~label[for="monthly"],
+.switch-wrapper [type="radio"]:checked#semiannually~label[for="semiannually"],
+.switch-wrapper [type="radio"]:checked#yearly~label[for="yearly"] {
+    color: #080225;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly~label[for="monthly"]:hover,
+.switch-wrapper [type="radio"]:checked#semiannually~label[for="semiannually"]:hover,
+.switch-wrapper [type="radio"]:checked#yearly~label[for="yearly"]:hover {
+    background: transparent;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly+label[for="yearly"]~.highlighter,
+.switch-wrapper [type="radio"]:checked#monthly+label[for="semiannually"]~.highlighter {
+    transform: none;
+}
+
+.switch-wrapper [type="radio"]:checked#yearly+label[for="monthly"]~.highlighter,
+.switch-wrapper [type="radio"]:checked#yearly+label[for="semiannually"]~.highlighter {
+    transform: translateX(100%);
+}
+
+.switch-wrapper label {
+    font-size: 1.8rem;
+    z-index: 1;
+    min-width: 170px;
+    line-height: 32px;
+    cursor: pointer;
+    border-radius: 42px;
+    transition: color 0.25s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.switch-wrapper label:hover {
+    background: #080225;
+}
+
+.switch-wrapper .highlighter {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(33% - 4px);
+    height: calc(100% - 8px);
+    border-radius: 42px;
+    /* background: var(--dark); */
+    transition: transform 0.25s ease-in-out;
+}
