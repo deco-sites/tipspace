@@ -31,7 +31,7 @@ export default function Tip({ title, text, videos }: Props) {
         <div class="carousel w-full">
           {videos?.map((item, index) => {
             return (
-              <div id={`slider${index}`} class="carousel-item relative">
+              <div id={`slider${index}`} class="carousel-item relative w-full">
                 <img
                   src={item}
                   key={index}
@@ -40,13 +40,13 @@ export default function Tip({ title, text, videos }: Props) {
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a
                     href={`#slider${(index - 1).toString()}`}
-                    class="btn btn-circle"
+                    class="bg-purple text-blue font-black font-DMSans cursor-pointer p-1 rounded text-xl mr-1 flex justify-center items-center"
                   >
                     ❮
                   </a>
                   <a
                     href={`#slider${(index + 1).toString()}`}
-                    class="btn btn-circle"
+                    class="bg-purple text-blue font-black font-DMSans cursor-pointer p-1 rounded text-xl mr-1 flex justify-center items-center"
                   >
                     ❯
                   </a>

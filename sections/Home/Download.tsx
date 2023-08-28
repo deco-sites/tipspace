@@ -63,7 +63,7 @@ export default function Download(
             </div>
           </div>
           <div class="w-4/12 bg-blue px-10 pt-10 flex rounded-3xl">
-            <div class="flex justify-between">
+            <div class="flex justify-center items-center flex-col">
               <div>
                 <h3 class="font-FKScreamer font-black text-4xl text-white mb-5">
                   {card3?.heading}
