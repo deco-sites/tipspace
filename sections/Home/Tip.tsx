@@ -17,12 +17,12 @@ export interface Props {
 export default function Tip({ title, text, videos }: Props) {
   return (
     <section class="bg-blue pt-20">
-      <div className="container flex justify-between items-end gap-4 mb-10">
-        <h3 class="text-9xl text-purple font-FKScreamer font-black inline-block w-3/6">
+      <div className="container flex flex-col md:flex-row md:justify-between md:items-end gap-4 mb-10">
+        <h3 class="text-7xl md:text-9xl text-purple font-FKScreamer text-center md:text-left font-black inline-block w-full md:w-3/6">
           {title}
         </h3>
         <div
-          class="text-gray font-bold text-base w-3/6"
+          class="text-gray font-normal mt-4 md:mt-0 md:font-bold text-base w-full md:w-3/6 text-center md:text-left"
           dangerouslySetInnerHTML={{ __html: text }}
         >
         </div>
