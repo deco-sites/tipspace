@@ -30,7 +30,7 @@ export default function Download(
           {heading}
         </h2>
         <div class="flex flex-wrap w-full justify-center md:justify-between gap-7">
-          <div class=" w-8/12 md:w-7/12 bg-purple px-10 pt-10 flex flex-col md:flex-row justify-between align-top rounded-3xl">
+          <div class=" w-full md:w-7/12 bg-purple px-10 pt-10 flex flex-col md:flex-row justify-between align-top rounded-3xl">
             <div>
               <h3 class="font-FKScreamer font-black text-4xl text-white mb-5">
                 {card1?.heading}
@@ -55,7 +55,7 @@ export default function Download(
             >
             </div>
           )}
-          <div class="w-7/12  md:w-4/12 md:bg-blue bg-purple px-10 pt-10 items-center md:items-start flex flex-col justify-start gap-8 rounded-3xl">
+          <div class="w-full md:w-4/12 md:bg-blue bg-purple px-10 pt-10 items-center md:items-start flex flex-col justify-start gap-8 rounded-3xl">
             <div>
               <h3 class="font-FKScreamer font-black text-4xl text-blue md:text-white mb-5">
                 {card2?.heading}
@@ -78,12 +78,12 @@ export default function Download(
           </div>
           {card2?.text && (
             <div
-              class="text-base font-DMSans w-8/12 md:w-6/12  text-purple my-8 block md:hidden "
+              class="text-base font-DMSans w-full md:w-6/12  text-purple my-8 block md:hidden "
               dangerouslySetInnerHTML={{ __html: card2?.text }}
             >
             </div>
           )}
-          <div class="w-7/12 md:w-4/12 bg-purple md:bg-blue px-10 pt-10 flex rounded-3xl">
+          <div class="w-full md:w-4/12 bg-purple md:bg-blue px-10 pt-10 flex rounded-3xl">
             <div class="flex justify-center items-center flex-col">
               <div>
                 <h3 class="font-FKScreamer font-black text-4xl text-white mb-5">
@@ -106,7 +106,7 @@ export default function Download(
               </div>
             </div>
           </div>
-          <div class="w-7/12 bg-purple px-10 pt-10 flex flex-col-reverse md:flex-row justify-between align-top rounded-3xl max-h-min">
+          <div class="w-full bg-purple px-10 pt-10 flex flex-col-reverse md:flex-row justify-between align-top rounded-3xl max-h-min">
             <div>
               <h3 class="font-FKScreamer font-black text-4xl text-white mb-5 mt-3 md:mt-1">
                 {card4?.heading}

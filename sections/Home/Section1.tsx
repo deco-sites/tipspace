@@ -77,7 +77,7 @@ export default function Section1({
         </div>
         {/* desk */}
         <div
-          class=" hidden md:relative carousel w-1/2 bg-[url('/image/vidro.png')] bg-center bg-no-repeat bg-contain"
+          class=" hidden md:block md:relative carousel w-1/2 bg-[url('/image/vidro.png')] bg-center bg-no-repeat bg-contain"
           style={{ width: "592px", height: "640px" }}
         >
           <div class="absolute transform -translate-y-1/2 top-16 right-3">
