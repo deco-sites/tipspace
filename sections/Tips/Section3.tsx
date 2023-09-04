@@ -41,50 +41,50 @@ export default function Section3(
 ) {
   return (
     <div class="w-full bg-gray pb-8">
-      <section class="container flex flex-wrap justify-between gap-5">
-        <div className="flex bg-green rounded-2xl pt-8 px-12 w-full">
-          <div class="w-2/5">
-            <h3 class="text-blue text-6xl font-black font-FKScreamer py-5">
+      <section class="container flex flex-wrap justify-between gap-5 pt-10 px-4 md:px-0">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-0 bg-green rounded-2xl pt-2 px-4 md:pt-8 md:px-12 w-full">
+          <div class="w-full md:w-2/5">
+            <h3 class="text-blue text-4xl md:text-6xl font-black font-FKScreamer py-5">
               {title}
             </h3>
             <p class="text-blue">
               {text}
             </p>
           </div>
-          <div class="w-3/5">
+          <div class="w-full md:w-3/5">
             <img src={imageBox1} alt="#" />
           </div>
         </div>
-        <div class="rounded-xl py-5 px-7 bg-purple w-5/12">
+        <div class="rounded-xl p-0 smd:py-5 md:px-7 bg-none md:bg-purple w-fuull md:w-5/12">
           <img
             src={imageBox2}
-            alt="#"
-            class="flex justify-center items-center "
+            alt="2"
+            class="flex justify-center items-center mx-auto"
           />
         </div>
-        <div class="w-6/12 gap-5 flex flex-col">
+        <div class="w-full md:w-6/12 gap-5 flex flex-col items-centers">
           <div class="bg-blue py-5 px-7 rounded-3xl ">
-            <h3 class="text-gray text-6xl font-FKScreamer font-black mb-4">
+            <h3 class="text-gray text-4xl md:text-6xl font-FKScreamer font-black mb-4">
               {titleBox3}
             </h3>
             <p class="text-green">{textBox3}</p>
           </div>
-          <div class="bg-purple pt-5 px-7 rounded-3xl ">
-            <h3 class="text-gray text-6xl font-FKScreamer font-black mb-4">
+          <div class="bg-purple pt-5 px-7 rounded-3xl w-full ">
+            <h3 class="text-gray text-4xl md:text-6xl font-FKScreamer font-black mb-4">
               {titleBox4}
             </h3>
             <img src={imageBox4} alt="#" />
           </div>
         </div>
-        <div className="w-full flex justify-between items-start py-5 px-10 bg-green rounded-3xl">
-          <div class="w-2/5">
-            <h3 class="font-FKScreamer font-black text-6xl text-blue mb-4">
+        <div className="w-full flex flex-col md:flex-row justify-between md:items-start py-5 px-10 bg-green rounded-3xl">
+          <div class="w-full md:w-2/5">
+            <h3 class="font-FKScreamer font-black text-4xl md:text-6xl text-blue mb-4">
               {titleBox5}
             </h3>
             <p class="text-blue">{textBox5}</p>
           </div>
-          <div class="w-2/5 mb-4">
-            <img src={imageBox5} alt="#" />
+          <div class="w-full md:w-2/5 mb-4">
+            <img src={imageBox5} alt="#" class="mt-4 md:mt-0" />
           </div>
         </div>
       </section>

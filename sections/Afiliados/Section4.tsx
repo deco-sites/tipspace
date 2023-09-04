@@ -11,21 +11,21 @@ export interface Props {
 
 export default function Section4({ title, textBoxLeft, titler, textb }: Props) {
   return (
-    <div className="w-full bg-gray py-20">
-      <section className="container py-14">
-        <h2 class="font-black font-FKScreamer uppercase text-blue text-8xl">
+    <div className="w-full bg-gray py-10 md:py-20 px-4 md:px-0">
+      <section className="container md:py-14 py-7">
+        <h2 class="font-black font-FKScreamer uppercase text-blue text-6xl md:text-8xl">
           {title}
         </h2>
       </section>
-      <section className="contianer flex gap-5 justify-center items-start">
-        <div class="bg-blue p-5 rounded-3xl w-4/12">
-          <p class="text-green">
+      <section className="contianer flex flex-col md:flex-row gap-10 justify-center items-center md:items-start">
+        <div class="bg-blue p-5 rounded-3xl w-full md:w-4/12">
+          <p class="text-green flex">
             {textBoxLeft}
           </p>
         </div>
-        <div class="w-4/12">
+        <div class=" w-full md:w-4/12">
           <div>
-            <h3 class="font-black font-FKScreamer uppercase text-purple text-8xl mb-3">
+            <h3 class="font-black font-FKScreamer uppercase text-purple text-6xl md:text-8xl mb-3">
               {titler}
             </h3>
           </div>

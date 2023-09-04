@@ -43,31 +43,31 @@ export default function Section2(
   }: Props,
 ) {
   return (
-    <div class="w-full bg-gray pb-8">
-      <h2 class="text-center text-purple mb-10 font-FKScreamer font-black uppercase text-7xl">
+    <div class="w-full bg-gray pb-8 pt-4 md:pt-0">
+      <h2 class="text-center text-purple mb-10 font-FKScreamer font-black uppercase text-6xl md:text-7xl">
         {title}
       </h2>
-      <section class="container flex  justify-center gap-5">
-        <div class="w-5/12 flex flex-col gap-5">
+      <section class="container flex flex-col md:flex-row items-center justify-center gap-5">
+        <div class="w-full md:w-5/12 flex flex-col gap-5">
           <div class="py-10 px-12 bg-purple rounded-3xl">
-            <h3 class="text-blue text-6xl font-FKScreamer font-black">
+            <h3 class="text-blue text-5xl mb-4 md:mb-0 md:text-6xl font-FKScreamer font-black">
               {title1}
             </h3>
             <p class="text-gray">{text1}</p>
           </div>
           <div class="py-10 px-12 bg-blue rounded-3xl">
-            <h3 class="text-gray text-6xl font-FKScreamer font-black">
+            <h3 class="text-gray text-5xl mb-4 md:mb-0 md:text-6xl font-FKScreamer font-black">
               {title3}
             </h3>
             <img src={imageBox3} alt="" />
           </div>
         </div>
-        <div class="w-6/12 flex flex-col gap-5">
+        <div class="w-full md:w-6/12 flex flex-col gap-5">
           <div class="py-10 px-12 bg-blue rounded-3xl">
             <img src={imageBox2} alt="" />
           </div>
           <div class="bg-purple py-10 px-12 rounded-3xl">
-            <h3 class="text-blue text-6xl font-FKScreamer font-black mb-5">
+            <h3 class="text-blue text-5xl mb-4 md:mb-0 md:text-6xl font-FKScreamer font-black">
               {title4}
             </h3>
             <p class="mb-5 text-gray">{text4}</p>
@@ -75,14 +75,14 @@ export default function Section2(
           </div>
         </div>
       </section>
-      <div className="container flex justify-between bg-green rounded-3xl px-12 mt-5">
-        <div class="py-10 w-4/12 ">
-          <h3 class="text-blue text-6xl font-FKScreamer font-black mb-5">
+      <div className="container flex justify-between flex-wrap bg-green rounded-3xl px-12 mt-5">
+        <div class="py-10 w-full md:w-4/12 ">
+          <h3 class="text-blue text-5xl mb-4 md:mb-0 md:text-6xl font-FKScreamer font-black">
             {title5}
           </h3>
           <p class="text-blue">{text5}</p>
         </div>
-        <div class="w-5/12">
+        <div class="w-full md:w-5/12">
           <img src={imageBox5} alt="#" class="h-full w-auto" />
         </div>
       </div>

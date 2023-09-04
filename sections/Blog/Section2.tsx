@@ -11,10 +11,10 @@ export interface Props {
 
 export default function Section1({ headline, text, picture }: Props) {
   return (
-    <section className="w-full bg-gray">
-      <div className="container flex flex-col">
+    <section className="bg-gray relative pt-96 md:w-full">
+      <div className="container flex flex-col absolute -top-12 md:-top-60 left-1/2 -translate-x-1/2 px-4 md:px-0">
         <img src={picture} alt="goto mulher" class="rounded-2xl" />
-        <h2 class="font-FKScreamer font-black text-7xl uppercase text-blue mt-4 mb-10 text-left">
+        <h2 class="font-FKScreamer font-black text-5xl md:text-7xl uppercase text-blue mt-4 mb-10 text-left">
           {headline}
         </h2>
         <p class="text-graylight text-md">{text}</p>

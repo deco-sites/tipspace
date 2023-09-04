@@ -1,8 +1,8 @@
 export default function Section1() {
   return (
-    <section className="w-full bg-gray py-12">
+    <section className="w-full bg-gray pb-12 pt-80 md:pt-48 px-4 md:px-0">
       <div className="container">
-        <div className="flex justify-between flex-wrap gap-4">
+        <div className="flex justify-center md:justify-between flex-wrap gap-4">
           <div class="w-96">
             <figure>
               <img

@@ -45,7 +45,7 @@ export default function Teste({
           </a>
           <a
             href="#"
-            class="text-blue bg-green font-bold py-1 md:py-2 px-8 radio rounded-3xl md-0 md:ml-2 w-auto  md:flex items-center text-center"
+            class="text-blue bg-green font-bold py-1 md:py-2 px-8 radio rounded-3xl md-0 md:ml-2 flex items-center text-center w-48 md:w-auto"
           >
             CRIAR CONTA
           </a>
