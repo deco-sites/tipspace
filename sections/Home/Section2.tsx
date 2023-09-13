@@ -12,7 +12,7 @@ export default function Section2({ headline, text1, text2 }: Props) {
     <section class="w-full bg-blue pb-12 px-4 md:px-0">
       <div className="container mb-8">
         <div className="w-full bg-[url('/image/bg-sec-2-home.png')] bg-center bg-no-repeat bg-contain h-96 relative hidden md:block">
-          <h3 class="absolute top-24 left-12 text-6xl text-green uppercase w-72 font-FKScreamer font-black">
+          <h3 class="absolute 2xl:left-20 top-24 left-12 text-6xl text-green uppercase w-72 font-FKScreamer font-black">
             {headline}
           </h3>
         </div>

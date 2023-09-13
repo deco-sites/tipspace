@@ -83,7 +83,7 @@ export default function Download(
             >
             </div>
           )}
-          <div class="w-full md:w-4/12 bg-purple md:bg-blue px-10 pt-10 flex rounded-3xl">
+          <div class="w-full md:w-5/12 bg-purple md:bg-blue px-10 pt-10 flex rounded-3xl">
             <div class="flex justify-center items-center flex-col">
               <div>
                 <h3 class="font-FKScreamer font-black text-4xl text-white mb-5">
@@ -106,7 +106,10 @@ export default function Download(
               </div>
             </div>
           </div>
-          <div class="w-full bg-purple px-10 pt-10 flex flex-col-reverse md:flex-row justify-between align-top rounded-3xl max-h-min">
+          <div
+            class="w-full md:w-6/12 bg-purple px-10 pt-10 flex flex-col-reverse md:flex-row justify-between align-top rounded-3xl max-h-min"
+            style={{ height: "300px" }}
+          >
             <div>
               <h3 class="font-FKScreamer font-black text-4xl text-white mb-5 mt-3 md:mt-1">
                 {card4?.heading}
