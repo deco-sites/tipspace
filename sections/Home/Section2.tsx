@@ -1,35 +1,57 @@
+import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+
 export interface Props {
   /** @title Title */
   headline?: string;
-  /** @title Text 1 */
-  text1?: string;
-  /** @title Text 2 */
-  text2?: string;
+  /** @title Upload your 1 photo */
+  picture1?: DecoImage;
+  /** @title Upload your 2 photo */
+  picture2?: DecoImage;
+  /** @title Upload center photo */
+  picturec?: DecoImage;
+  /** @title Upload your 3 photo */
+  picture3?: DecoImage;
+  /** @title Upload your 4 photo */
+  picture4?: DecoImage;
 }
 
-export default function Section2({ headline, text1, text2 }: Props) {
+export default function Section2(
+  { headline, picture1, picture2, picture3, picture4, picturec }: Props,
+) {
   return (
-    <section class="w-full bg-blue pb-12 px-4 md:px-0">
-      <div className="container mb-8">
-        <div className="w-full bg-[url('/image/bg-sec-2-home.png')] bg-center bg-no-repeat bg-contain h-96 relative hidden md:block">
-          <h3 class="absolute 2xl:left-20 top-24 left-12 text-6xl text-green uppercase w-72 font-FKScreamer font-black">
-            {headline}
-          </h3>
+    <section class="w-full bg-blue pb-12 px-4 md:px-0 mx-auto">
+      <div className="container flex gap-16 justify-center">
+        <div class="flex flex-col gap-24 pt-8">
+          <div class="flex flex-col items-end">
+            <img src={picture1} alt="" /> <br />
+            <span class="text-gray text-lg text-right">
+              SUAS RANKEADAS VALENDO MUITO MAIS!
+            </span>
+          </div>
+          <div class="flex flex-col items-end">
+            <img src={picture2} alt="" /> <br />
+            <span class="text-gray text-lg text-right">
+              Conheça todos os modos e jogue valendo!
+            </span>
+          </div>
         </div>
-        <div className="w-full block md:hidden">
-          <img src="/image/bg.png" alt="" />
-          <h3 class="font-FKScreamer font-black text-green text-4xl text-center mt-4">
-            {headline}
-          </h3>
+        <div>
+          <img src={picturec} alt="" />
         </div>
-      </div>
-      <div className="container flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-3 pt-6">
-        <p class="text-gray text-base">
-          {text1}
-        </p>
-        <p class="text-purple font-bold text-xl">
-          {text2}
-        </p>
+        <div class="flex flex-col gap-24 pt-8">
+          <div class="flex flex-col items-start">
+            <img src={picture3} alt="" /> <br />
+            <span class="text-gray text-lg text-left">
+              ganhe grana a cada vitória
+            </span>
+          </div>
+          <div class="flex flex-col items-start">
+            <img src={picture4} alt="" /> <br />
+            <span class="text-gray text-lg text-left">
+              Partidas com muito mais emoção
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );

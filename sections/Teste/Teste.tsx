@@ -30,7 +30,7 @@ export default function Teste({
             <ul class="flex justify-between gap-1">
               {links.map(({ href, title }) => (
                 <a href={href} aria-label={title}>
-                  <li class="text-gray mr-3">{title}</li>
+                  <li class="text-gray mr-3 text-sm">{title}</li>
                 </a>
               ))}
             </ul>
@@ -39,13 +39,13 @@ export default function Teste({
         <nav class="flex items-center justify-between w-auto">
           <a
             href="#"
-            class="text-gray bg-none border-green border-solid border-2 font-bold py-2 px-6 radio rounded-3xl mr-2 hidden w-auto md:flex items-center text-center"
+            class="text-white text-center text-sm bg-none border-purple border-solid border-2 font-bold py-4 px-6 radio rounded-lg mr-2 hidden w-auto md:flex items-center"
           >
             DOWNLOAD
           </a>
           <a
             href="#"
-            class="text-blue bg-green font-bold py-1 md:py-2 px-8 radio rounded-3xl md-0 md:ml-2 flex items-center text-center w-48 md:w-auto"
+            class="text-white text-center text-sm bg-purple font-bold  py-4 px-6 radio rounded-lg md-0 md:ml-2 flex items-center w-48 md:w-auto"
           >
             CRIAR CONTA
           </a>

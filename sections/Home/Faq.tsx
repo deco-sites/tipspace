@@ -14,7 +14,7 @@ export default function Faq({ accordion, heading }: Props) {
   return (
     <section class="w-full bg-blue py-20 px-4 md:px-0">
       <div class="container">
-        <h2 class="text-gray font-black text-4xl md:text-5xl mb-6">
+        <h2 class="text-gray font-black font-FKScreamer md:text-7xl :text-5xl mb-6">
           {heading}
         </h2>
         <div>
@@ -27,12 +27,12 @@ export default function Faq({ accordion, heading }: Props) {
                   checked={true}
                 />
                 <div class="collapse-title">
-                  <h3 class="text-gray text-3xl font-DMSans font-bold">
+                  <h3 class="text-purple text-3xl font-DMSans font-bold">
                     {title}
                   </h3>
                 </div>
                 <div class="collapse-content bg-gray md:bg-transparent rounded-2xl pl-5">
-                  <p class="text-blue md:text-purple text-xl font-normal  py-10 md:pt-2 rounded-2xl bg-gray md:bg-transparent ">
+                  <p class="text-white text-xl font-normal leading-9 pl-12  py-10 md:pt-2 rounded-2xl bg-gray md:bg-transparent ">
                     {content}
                   </p>
                 </div>

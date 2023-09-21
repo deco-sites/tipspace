@@ -30,6 +30,19 @@ function GlobalTags() {
           __html: `@font-face {
               font-family: "FKScreamer";
               src: url("${
+            asset("/fonts/FKScreamer-Backslanted.otf")
+          }") format("truetype");
+              font-style: italic;
+              font-weight: black;
+          }`,
+        }}
+      />
+      <style
+        type="text/css"
+        dangerouslySetInnerHTML={{
+          __html: `@font-face {
+              font-family: "FKScreamer";
+              src: url("${
             asset("/fonts/FKScreamer-Slanted.otf")
           }") format("truetype");
               font-style: normal;

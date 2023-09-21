@@ -8,6 +8,7 @@ export default {
     colors: {
       blue: "#070223",
       bluesoft: "#8F7FEA",
+      darkblue: "#0F0C2B",
       purple: "#BF2CF9",
       gray: "#EDE9FF",
       graysoft: "#EDE8FF",
