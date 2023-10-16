@@ -17,10 +17,10 @@ export default function Download(
   { heading }: Props,
 ) {
   return (
-    <section class="w-full bg-gray pt-14 pb-36 px-4 md:px-0">
+    <section class="w-full relative bg-gray pt-14 pb-36 px-4 md:px-0">
       <div class="container flex flex-col gap-10">
         <div class="flex justify-center gap-10 bg-white rounded-xl max-w-5xl mx-auto">
-          <img src="/image/box1.png" alt="jogador" class="w-1/2" />
+          <img src="/images/featured-image-1.png" alt="jogador" class="w-1/2" />
           <div class="w-1/2 flex flex-col gap-6">
             <div class="flex justify-start gap-4 items-center pt-10">
               <img src="image/content1.png" alt="" />

@@ -20,13 +20,23 @@ export default function Section1({
         >
           jogue <br /> valendo!
         </h1>
-        <img src={picture} alt="imagem jogando lol" class="w-3/5" />
+        <video
+          src="/videos/hero-main.webm"
+          class="rounded-3xl w-3/5"
+          playsInline
+          autoPlay
+          muted
+          loop
+        />
       </section>
       <section class="container py-20 max-w-xl lg:max-w-2xl">
         <h3 class="text-xl text-gray text-center ">
           A plataforma onde cada vitória nos jogos se transforma em grana real
-          no bolso! Jogue valendo e torne suas partidas muito mais emocionantes
-          e desafiadoras!
+          no bolso!{" "}
+          <span class="font-black">
+            Jogue valendo nas ranqueadas ou nos modos exclusivos,
+          </span>{" "}
+          e torne suas partidas muito mais emocionantes e desafiadoras
         </h3>
       </section>
     </div>

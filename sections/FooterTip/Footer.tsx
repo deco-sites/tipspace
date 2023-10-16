@@ -62,18 +62,66 @@ export default function Footer(
           reservados.
         </p>
         <div class="flex justify-center items-center md:pr-12 pr-0">
-          {social?.map((item, index) => {
-            return (
-              <a
-                href={item.link}
-                target="_blank"
-                class="mr-3 last:mr-0"
-                key={index}
-              >
-                <img src={item.img} alt="logo rede social" />
-              </a>
-            );
-          })}
+          <a
+            target="blank"
+            href="https://www.twitch.tv/tipspace"
+            class="mr-3 last:mr-0"
+          >
+            <img
+              src="/images/icon-social-twitch.svg"
+              alt="Twitch da Tipspace"
+            />
+          </a>
+          <a
+            target="blank"
+            href="https://discord.gg/tipspace"
+            class="mr-3 last:mr-0"
+          >
+            <img
+              src="/images/icon-social-discord.svg"
+              alt="Discord da Tipspace"
+            />
+          </a>
+          <a
+            target="blank"
+            href="https://instagram.com/tipspacebr"
+            class="mr-3 last:mr-0"
+          >
+            <img
+              src="/images/icon-social-instagram.svg"
+              alt="Instagram da Tipspace"
+            />
+          </a>
+          <a
+            target="blank"
+            href="https://twitter.com/tipspace"
+            class="mr-3 last:mr-0"
+          >
+            <img
+              src="/images/icon-social-twitter.svg"
+              alt="Twitter da Tipspace"
+            />
+          </a>
+          <a
+            target="blank"
+            href="https://www.youtube.com/channel/UC_V_ujeANFG3LjtHQZF9lLw"
+            class="mr-3 last:mr-0"
+          >
+            <img
+              src="/images/icon-social-youtube.svg"
+              alt="Youtube da Tipspace"
+            />
+          </a>
+          <a
+            target="blank"
+            href="https://www.tiktok.com/@tipspacebr/"
+            class="mr-3 last:mr-0"
+          >
+            <img
+              src="/images/icon-social-tiktok.svg"
+              alt="Tiktok da Tipspace"
+            />
+          </a>
         </div>
       </div>
     </section>

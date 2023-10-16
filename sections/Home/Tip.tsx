@@ -16,13 +16,15 @@ export interface Props {
 
 export default function Tip({ title, text, videos }: Props) {
   return (
-    <section class="bg-blue pt-20">
+    <section class="bg-blue pt-0">
+      <div className="container relative mb-20 -mt-10">
+        <HomeBoxes></HomeBoxes>
+      </div>
       <div className="container flex flex-col md:flex-row md:justify-between md:items-start gap-8 mb-10">
         <img src="image/tipemtip.png" alt="" />
-        <div
-          class="text-gray mt-4 md:mt-0 text-xl w-full md:w-3/6 text-center md:text-left"
-          dangerouslySetInnerHTML={{ __html: text }}
-        >
+        <div class="text-gray mt-4 md:mt-0 text-xl w-full md:w-3/6 text-center md:text-left">
+          Conheça e acompanhe a trajetória de jogadores que já fizeram uma grana
+          aqui na Tipspace, deixando suas partidas mais emocionantes!
         </div>
       </div>
       <div className="container">
@@ -55,5 +57,16 @@ export default function Tip({ title, text, videos }: Props) {
         </div>
       </div>
     </section>
+  );
+}
+
+export function HomeBoxes() {
+  return (
+    <div class="flex gap-3 text-center mx-auto w-full justify-center">
+      <img src="/images/box-1.png" alt="100% Skill based" />
+      <img src="/images/box-2.png" alt="Modos 1v1 e 2v2" />
+      <img src="/images/box-3.png" alt="CPF + ID Check" />
+      <img src="/images/box-4.png" alt="Resgate de forma simples" />
+    </div>
   );
 }

@@ -24,30 +24,36 @@ export default function Section2(
         <div class="flex flex-col gap-24 pt-8">
           <div class="flex flex-col items-end">
             <img src={picture1} alt="" /> <br />
-            <span class="text-gray text-lg text-right">
+            <span class="text-gray text-lg text-right uppercase">
               SUAS RANKEADAS VALENDO MUITO MAIS!
             </span>
           </div>
           <div class="flex flex-col items-end">
             <img src={picture2} alt="" /> <br />
-            <span class="text-gray text-lg text-right">
+            <span class="text-gray text-lg text-right uppercase">
               Conheça todos os modos e jogue valendo!
             </span>
           </div>
         </div>
         <div>
-          <img src={picturec} alt="" />
+          <video
+            src="/videos/hero-screens.webm"
+            playsInline
+            autoPlay
+            muted
+            loop
+          />
         </div>
         <div class="flex flex-col gap-24 pt-8">
           <div class="flex flex-col items-start">
             <img src={picture3} alt="" /> <br />
-            <span class="text-gray text-lg text-left">
+            <span class="text-gray text-lg text-left uppercase">
               ganhe grana a cada vitória
             </span>
           </div>
           <div class="flex flex-col items-start">
             <img src={picture4} alt="" /> <br />
-            <span class="text-gray text-lg text-left">
+            <span class="text-gray text-lg text-left uppercase">
               Partidas com muito mais emoção
             </span>
           </div>
